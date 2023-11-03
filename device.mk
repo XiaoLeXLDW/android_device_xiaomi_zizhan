@@ -6,6 +6,7 @@
 #
 
 LOCAL_PATH := device/xiaomi/zizhan
+PRODUCT_PLATFORM := mSM8475
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -22,7 +23,7 @@ PRODUCT_PACKAGES += \
     bootctrl.taro
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.taro \
+    bootctrl.mSM8475 \
     libgptutils \
     libz \
     libcutils
